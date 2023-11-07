@@ -1,5 +1,9 @@
 .nav {
-    z-index: 1;
+    /*position: fixed;*/
+    width: 100%;
+    background-color: #fff;
+    z-index: 9;
+    /*z-index: 1;*/
 }
 
 .container_top {

@@ -10,10 +10,11 @@ function App() {
   return (
       <>
         <Routes>
-         <Route index path = "/" element = { <Home/> }/>
-         <Route path= "layout" element={ <Layout/> }/>
+         <Route path= "/" element={ <Layout/> }>
+            <Route index element = { <Home/> }/>
             <Route path="/categories/:id" element={<Products />} />
-          <Route path = "*" element = { <Navigate to= "/"/>}/>
+            <Route path = "*" element = { <Navigate to= "/"/>}/>
+         </Route>
         </Routes>
         </>
   );
