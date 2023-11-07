@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import SideNav from "../SideNav/SideNav";
-import Nav from "../Nav/Navbar";
+import SideNav from "./SideNav";
+import Nav from "./Navbar";
 
 
         const Header = () => {
