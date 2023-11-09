@@ -281,7 +281,8 @@ button {
     font-size: 15px;
     font-weight: 400;
     margin-top: 50px;
-    color: grey;
+    color: #656565;
+    /*color: grey;*/
     width: fit-content;
 }
 

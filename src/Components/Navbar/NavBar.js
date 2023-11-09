@@ -3,6 +3,7 @@ import './navBar.css';
 import {Navbar, Container, Nav} from "react-bootstrap";
 import LogoImg from '../../Assets/logo.png'
 import {Link} from "react-router-dom";
+import useWindowScrollToTop from "../../useWindowScrollToTop";
 
 
 const NavBar = () => {
@@ -20,6 +21,8 @@ if (window.scrollY >= 100) {
     }
 
     window.addEventListener("scroll", scrollHandler);
+
+    useWindowScrollToTop();
 
     return (
         <Navbar
@@ -46,11 +49,7 @@ if (window.scrollY >= 100) {
                         fill="none"
                         className="nav-icon"
                         xmlns="http://www.w3.org/2000/svg"><path d="M10 10a4 4 0 100-8 4 4 0 000 8zm0-7a3 3 0 110 6 3 3 0 010-6zM10 11c-5 0-7 2-7 7h14c0-5-2-7-7-7zm0 1c4.08 0 5.73 1.33 6 5H4c.27-3.67 1.92-5 6-5z" fill="currentColor"></path></svg>
-                    {/*<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"*/}
-                    {/*     fill="black" className="nav-icon">*/}
-                    {/*    <path fillRule="evenodd"*/}
-                    {/*          d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />*/}
-                    {/*</svg>*/}
+
                     <Link
                         to= '/cart'
                         className= "cart"
@@ -63,8 +62,6 @@ if (window.scrollY >= 100) {
                             className="nav-icon"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.63 17.47l-.6-11a.51.51 0 00-.5-.47h-2v-.43a3.5 3.5 0 00-7 0V6h-2a.51.51 0 00-.5.47l-.62 11a.49.49 0 00.49.53h12.3a.49.49 0 00.43-.53zm-12.31-.42L4.9 7h10.2l.56 10.1-11.34-.05zM7.5 5.57a2.5 2.5 0 115 0V6h-5v-.43z" fill="currentColor"></path></svg>
-
-
                     </Link>
                 </div>
 
