@@ -15,6 +15,7 @@ useWindowScrollToTop();
                     <Col md={3} sm={5} className='box'>
                         <div className="logo">
                             <Link
+                            onClick={() => window.scrollTo(0, 0)}
                             to= '/'
                             >
                             <img
@@ -22,6 +23,7 @@ useWindowScrollToTop();
                                 alt= "logo"/>
                             </Link>
                             <Link
+                                onClick={() => window.scrollTo(0, 0)}
                                 to= '/'
                             >
                             <h1>LorDesIgn</h1>
@@ -36,30 +38,35 @@ useWindowScrollToTop();
                         <ul>
                             <li>
                                 <Link
+                                    onClick={() => window.scrollTo(0, 0)}
                                     to= '/'>
                                     Careers
                                 </Link>
                     </li>
                             <li>
                                 <Link
+                                    onClick={() => window.scrollTo(0, 0)}
                                     to= '/'>
                                     People & Planet
                                 </Link>
                                </li>
                             <li>
                                 <Link
+                                    onClick={() => window.scrollTo(0, 0)}
                                     to= '/'>
                                     Advertising
                                 </Link>
                                 </li>
                             <li>
                                 <Link
+                                    onClick={() => window.scrollTo(0, 0)}
                                     to= '/'>
                                     Careers
                                 </Link>
                                 </li>
                             <li>
                                 <Link
+                                    onClick={() => window.scrollTo(0, 0)}
                                     to= '/'>
                                     Modern Slavery Statement
                                 </Link>
@@ -71,30 +78,35 @@ useWindowScrollToTop();
                         <ul>
                             <li>
                                 <Link
+                                    onClick={() => window.scrollTo(0, 0)}
                                     to= '/'>
                                     Track an Order
                                 </Link>
                                 </li>
                             <li>
                                 <Link
+                                    onClick={() => window.scrollTo(0, 0)}
                                     to= '/'>
                                     Create a Return
                                 </Link>
                                 </li>
                             <li>
                                 <Link
+                                    onClick={() => window.scrollTo(0, 0)}
                                     to= '/'>
                                     Contact Us
                                 </Link>
                                 </li>
                             <li>
                                 <Link
+                                    onClick={() => window.scrollTo(0, 0)}
                                     to= '/'>
                                     Return Policy
                                 </Link>
                                 </li>
                             <li>
                                 <Link
+                                    onClick={() => window.scrollTo(0, 0)}
                                     to= '/'>
                                     Privacy Policy
                                 </Link>

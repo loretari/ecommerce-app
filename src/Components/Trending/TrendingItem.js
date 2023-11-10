@@ -1,11 +1,10 @@
 import React from 'react';
 import './Trending.css';
-import { items } from "../Data/AllData";
+import { items } from "../../Data/AllData";
 import {Link} from "react-router-dom";
 
 function TrendingItem () {
 
-    // const filteredItems = items.filter((item) => item.id <= 8);
     const filteredItems = items.filter((item) => item.trend);
 
 

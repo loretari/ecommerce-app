@@ -1,3 +1,10 @@
+.trendingContainer {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 19px;
+}
+
+
 .row-item {
     outline: 2px solid rgba(0, 0, 0, .205);
     cursor: pointer;
@@ -11,7 +18,8 @@
 }
 
 .trending {
-    padding-bottom: 10rem;
+    padding: 10rem 10rem;
+
 }
 
 .item-header img {
@@ -74,12 +82,22 @@
 }
 
 .btns button:hover {
-    /*background-color: black;*/
     background-color: #515151;
 }
 
 @media only screen and (max-width: 670px){
     .trending h3 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
+    .btns {
+        font-size: 1rem;
+    }
+    .trending {
+        max-width: 800px;
+        padding: 30px 20px;
+    }
+    .trendingContainer {
+        padding: 0;
+    }
+
 }

@@ -31,11 +31,23 @@ if (window.scrollY >= 100) {
             className = {isFixed ? "navbar fixed" : "navbar"}>
 
             <Container className= "navbar-container">
-                <Navbar.Brand
-                    to= "/"
+                <Navbar.Brand>
+
+                <Link
+                    onClick={() => window.scrollTo(0, 0)}
+                    to= '/'
                 >
-                    <img src={LogoImg} alt= "logo"/>
+                    <img
+                        src={LogoImg}
+                        alt= "logo"/>
+                </Link>
+                <Link
+                    onClick={() => window.scrollTo(0, 0)}
+                    to= '/'
+                >
                     <h1 className= "logo">LorDesIgn</h1>
+                </Link>
+
                 </Navbar.Brand>
 
 
@@ -51,6 +63,7 @@ if (window.scrollY >= 100) {
                         xmlns="http://www.w3.org/2000/svg"><path d="M10 10a4 4 0 100-8 4 4 0 000 8zm0-7a3 3 0 110 6 3 3 0 010-6zM10 11c-5 0-7 2-7 7h14c0-5-2-7-7-7zm0 1c4.08 0 5.73 1.33 6 5H4c.27-3.67 1.92-5 6-5z" fill="currentColor"></path></svg>
 
                     <Link
+                        onClick={() => window.scrollTo(0, 0)}
                         to= '/cart'
                         className= "cart"
                         data-num={3}>
@@ -76,7 +89,8 @@ if (window.scrollY >= 100) {
                         viewBox="0 0 20 20"
                         fill="none"
                         className="nav-icon"
-                        xmlns="http://www.w3.org/2000/svg"><path d="M16.54 5.48H3.5a.48.48 0 01-.463-.662.47.47 0 01.443-.288h13A.48.48 0 0117 5a.49.49 0 01-.46.48zM16.54 15.48H3.5A.49.49 0 013 15a.48.48 0 01.48-.47h13A.471.471 0 0117 15a.48.48 0 01-.46.48zM16.54 10.48H3.5A.49.49 0 013 10a.48.48 0 01.48-.47h13A.48.48 0 0117 10a.49.49 0 01-.46.48z" fill="currentColor"></path></svg>
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.54 5.48H3.5a.48.48 0 01-.463-.662.47.47 0 01.443-.288h13A.48.48 0 0117 5a.49.49 0 01-.46.48zM16.54 15.48H3.5A.49.49 0 013 15a.48.48 0 01.48-.47h13A.471.471 0 0117 15a.48.48 0 01-.46.48zM16.54 10.48H3.5A.49.49 0 013 10a.48.48 0 01.48-.47h13A.48.48 0 0117 10a.49.49 0 01-.46.48z" fill="currentColor"></path></svg>
 
                 </Navbar.Toggle>
             </div>
@@ -113,6 +127,9 @@ if (window.scrollY >= 100) {
                             </Link>
                         </Nav.Item>
                         <Nav.Item className="expanded-cart">
+                            <Link
+                                onClick={() => window.scrollTo(0, 0)}
+                                to= '/'>
                             <svg
                                 width="20"
                                 height="20"
@@ -121,8 +138,9 @@ if (window.scrollY >= 100) {
                                 className="nav-icon"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm0-7a3 3 0 110 6 3 3 0 010-6zM10 11c-5 0-7 2-7 7h14c0-5-2-7-7-7zm0 1c4.08 0 5.73 1.33 6 5H4c.27-3.67 1.92-5 6-5z" fill="currentColor"></path></svg>
-
+                            </Link>
                             <Link
+                                onClick={() => window.scrollTo(0, 0)}
                                 to='/cart'
                                 className='cart'
                                 data-num={3}>

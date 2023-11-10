@@ -16,8 +16,9 @@ function TrendingSlider () {
 
     return (
         <div className= "trending">
-            <div className= "container">
-                <div className= "title-btns">
+            <div className= "trendingContainer">
+
+            <div className= "title-btns">
                     <h3>Our expert curation of consciously crafted, lasting luxury</h3>
                     <div className= "btns">
                         <button title= "scroll-left" onClick={slideLeft}>
@@ -31,7 +32,6 @@ function TrendingSlider () {
 
                 <div className= "row-container" id= "slider">
                     <TrendingItem/>
-
                 </div>
             </div>
         </div>

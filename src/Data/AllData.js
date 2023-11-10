@@ -1,7 +1,7 @@
-import dress1Slide from '../Assets/Slide/Dress1.1.jpg';
-import dress2Slide from '../Assets/Slide/Dress2.1.jpg';
-import dress3Slide from '../Assets/Slide/Dress3.1.jpg';
-import dress4Slide from '../Assets/Slide/Dress4.1.jpg';
+import dress1Slide from '../Assets/Slide/Dress1.jpg';
+import dress2Slide from '../Assets/Slide/Dress2.jpg';
+import dress3Slide from '../Assets/Slide/Dress3.jpg';
+import dress4Slide from '../Assets/Slide/Dress4.jpg';
 
 
 
