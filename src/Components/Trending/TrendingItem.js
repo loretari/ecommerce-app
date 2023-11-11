@@ -16,7 +16,7 @@ function TrendingItem () {
                     key={item.id} className= "row-item">
                     <Link
                         onClick={() => window.scrollTo(0, 0)}
-                        to= {(`/shopBy/product/${item.id}`)}
+                        to= {(`/shop/${item.id}`)}
                     >
                         <div className= "item-header">
                             <img src={item.img} alt= "product" />

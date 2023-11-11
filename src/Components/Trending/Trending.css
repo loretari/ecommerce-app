@@ -2,6 +2,7 @@
     max-width: 1420px;
     margin: 0 auto;
     padding: 0 19px;
+
 }
 
 
@@ -19,6 +20,7 @@
 
 .trending {
     padding: 10rem 10rem;
+    background-color: #f2f2f4;
 
 }
 
@@ -35,7 +37,7 @@
 .trending h3 {
     font-size: 2.6rem;
     font-weight: 600;
-    margin-bottom: 4.2rem !important;
+    margin-bottom: 1.6rem !important;
 }
 
 .row-container {
@@ -58,9 +60,18 @@
     scrollbar-width: none;
 }
 
+
+
 .title-btns {
     display: flex;
     justify-content: space-between;
+}
+
+.newIn {
+    margin-bottom: 3.2rem !important;
+}
+.newIn p {
+    font-size: 18px;
 }
 
 .btns button {
@@ -99,5 +110,11 @@
     .trendingContainer {
         padding: 0;
     }
+    .newIn {
+        width: 22rem;
+    }
 
+    .newIn p {
+        font-size: 16px;
+    }
 }

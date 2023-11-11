@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick";
 import { Container } from "react-bootstrap";
 import { SliderData} from '../../Data/AllData';
-import SliderCard from "./SliderCard";
+import SliderItem from "./SliderItem";
 
 const SliderHome = () => {
     const settings = {
@@ -12,7 +12,7 @@ const SliderHome = () => {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
     }
 
 
@@ -22,7 +22,7 @@ const SliderHome = () => {
            <Slider {...settings}>
                {SliderData.map((value, index) => {
                    return (
-                       <SliderCard
+                       <SliderItem
                            key= {index}
                            title={value.title}
                            cover={value.cover}

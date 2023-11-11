@@ -19,7 +19,11 @@ function TrendingSlider () {
             <div className= "trendingContainer">
 
             <div className= "title-btns">
-                    <h3>Our expert curation of consciously crafted, lasting luxury</h3>
+                <div className= "newIn">
+                    <h3>New In</h3>
+                    <p>Stay ahead of the style cure with our latest arrivals</p>
+                </div>
+
                     <div className= "btns">
                         <button title= "scroll-left" onClick={slideLeft}>
                             <IconArrowLeft/>

@@ -5,30 +5,30 @@ import dress4Slide from '../Assets/Slide/Dress4.jpg';
 
 
 
-import Img1 from '../Assets/ProudProducts/1.jpg';
-import Other1Imgs1 from "../Assets/ProudProducts/1.1.jpg";
-import Other1Imgs2 from "../Assets/ProudProducts/1.2.jpg";
-import Img2 from '../Assets/ProudProducts/2.jpg';
-import Other2Imgs1 from "../Assets/ProudProducts/2.1.jpg";
-import Other2Imgs2 from "../Assets/ProudProducts/2.2.jpg";
-import Img3 from '../Assets/ProudProducts/3.jpg';
-import Other3Imgs1 from "../Assets/ProudProducts/3.1.jpg";
-import Other3Imgs2 from "../Assets/ProudProducts/3.2.jpg";
-import Img4 from '../Assets/ProudProducts/4.jpg';
-import Other4Imgs1 from "../Assets/ProudProducts/4.1.jpg";
-import Other4Imgs2 from "../Assets/ProudProducts/4.2.jpg";
-import Img5 from '../Assets/ProudProducts/5.jpg';
-import Other5Imgs1 from "../Assets/ProudProducts/5.1.jpg";
-import Other5Imgs2 from "../Assets/ProudProducts/5.2.jpg";
-import Img6 from '../Assets/ProudProducts/6.jpg';
-import Other6Imgs1 from "../Assets/ProudProducts/6.1.jpg";
-import Other6Imgs2 from "../Assets/ProudProducts/6.2.jpg";
-import Img7 from '../Assets/ProudProducts/7.jpg';
-import Other7Imgs1 from "../Assets/ProudProducts/7.1.jpg";
-import Other7Imgs2 from "../Assets/ProudProducts/7.2.jpg";
-import Img8 from '../Assets/ProudProducts/8.jpg';
-import Other8Imgs1 from "../Assets/ProudProducts/8.1.jpg";
-import Other8Imgs2 from "../Assets/ProudProducts/8.2.jpg";
+import Img1 from '../Assets/SelectionsProducts/1.jpg';
+import Other1Imgs1 from "../Assets/SelectionsProducts/1.1.jpg";
+import Other1Imgs2 from "../Assets/SelectionsProducts/1.2.jpg";
+import Img2 from '../Assets/SelectionsProducts/2.jpg';
+import Other2Imgs1 from "../Assets/SelectionsProducts/2.1.jpg";
+import Other2Imgs2 from "../Assets/SelectionsProducts/2.2.jpg";
+import Img3 from '../Assets/SelectionsProducts/3.jpg';
+import Other3Imgs1 from "../Assets/SelectionsProducts/3.1.jpg";
+import Other3Imgs2 from "../Assets/SelectionsProducts/3.2.jpg";
+import Img4 from '../Assets/SelectionsProducts/4.jpg';
+import Other4Imgs1 from "../Assets/SelectionsProducts/4.1.jpg";
+import Other4Imgs2 from "../Assets/SelectionsProducts/4.2.jpg";
+import Img5 from '../Assets/SelectionsProducts/5.jpg';
+import Other5Imgs1 from "../Assets/SelectionsProducts/5.1.jpg";
+import Other5Imgs2 from "../Assets/SelectionsProducts/5.2.jpg";
+import Img6 from '../Assets/SelectionsProducts/6.jpg';
+import Other6Imgs1 from "../Assets/SelectionsProducts/6.1.jpg";
+import Other6Imgs2 from "../Assets/SelectionsProducts/6.2.jpg";
+import Img7 from '../Assets/SelectionsProducts/7.jpg';
+import Other7Imgs1 from "../Assets/SelectionsProducts/7.1.jpg";
+import Other7Imgs2 from "../Assets/SelectionsProducts/7.2.jpg";
+import Img8 from '../Assets/SelectionsProducts/8.jpg';
+import Other8Imgs1 from "../Assets/SelectionsProducts/8.1.jpg";
+import Other8Imgs2 from "../Assets/SelectionsProducts/8.2.jpg";
 import Img9 from '../Assets/Products/9.jpg';
 import Other9Imgs1 from "../Assets/Products/9.1.jpg";
 import Other9Imgs2 from "../Assets/Products/9.2.jpg";
@@ -148,7 +148,7 @@ export const items = [
         fabric: "Polyester, wool",
         color: "Black",
         size: "M",
-        proud: true,
+        selections: false,
         trend: false,
     },
     {
@@ -166,8 +166,8 @@ export const items = [
         fabric: "Polyester, viscose",
         color: "Black",
         size: "M",
-        proud: true,
-        trend: false,
+        selections: false,
+        trend: true,
     },
     {
         id: 3,
@@ -184,7 +184,7 @@ export const items = [
         fabric: "Polyester, viscose",
         color: "Black",
         size: "M",
-        proud: true,
+        selections: false,
         trend: false,
     },
     {
@@ -202,7 +202,7 @@ export const items = [
         fabric: "Polyester, wool",
         color: "Blue",
         size: "M",
-        proud: true,
+        selections: false,
         trend: false,
 
     },
@@ -223,7 +223,7 @@ export const items = [
         fabric: "Viscose, spandex",
         color: "White with blue checks",
         size: "M",
-        proud: true,
+        selections: true,
         trend: false,
     },
     {
@@ -242,7 +242,7 @@ export const items = [
         fabric: "Viscose, polyester",
         color: "Skye blue",
         size: "M",
-        proud: true,
+        selections: true,
         trend: true,
     },
     {
@@ -258,7 +258,7 @@ export const items = [
         fabric: "Cotton, nylon",
         color: "Blue with White stripes",
         size: "M",
-        proud: true,
+        selections: true,
         trend: false,
     },
     {
@@ -277,7 +277,7 @@ export const items = [
         fabric: "Viscose, spandex",
         color: "Sky Blue",
         size: "M",
-        proud: true,
+        selections: true,
         trend: true,
     },
     {
@@ -295,7 +295,7 @@ export const items = [
         fabric: "Viscose, spandex",
         color: "Navy Blue",
         size: "M",
-        proud: false,
+        selections: true,
         trend: true,
     },
     {
@@ -314,8 +314,8 @@ export const items = [
         fabric: "Cotton, spandex",
         color: "Navy Blue",
         size: "M",
-        proud: false,
-        trend: true,
+        selections: true,
+        trend: false,
 
     },
     {
@@ -331,7 +331,7 @@ export const items = [
         fabric: "Cotton, spandex",
         color: "White with Blue ornaments",
         size: "M",
-        proud: false,
+        selections: true,
         trend: true,
 
     },
@@ -348,7 +348,7 @@ export const items = [
         fabric: "Polyester",
         color: "Black with white dragon-flies",
         size: "M",
-        proud: false,
+        selections: true,
         trend: false,
 
     },
@@ -365,7 +365,7 @@ export const items = [
         fabric: "Viscose",
         color: "Black",
         size: "M",
-        proud: false,
+        selections: false,
         trend: false,
 
     },
@@ -383,7 +383,7 @@ export const items = [
         fabric: "Polyester",
         color: "Black",
         size: "M",
-        proud: false,
+        selections: false,
         trend: false,
 
     },
@@ -391,7 +391,7 @@ export const items = [
         id: 15,
         category: "dresses",
         img: Img15,
-        description: "Wool Black Pencil Dress dress",
+        description: "Black Pencil Dress dress",
         price: 108.00,
         otherImgs: [Other15Imgs1, Other15Imgs2],
         specs: "An elegant and unique Little long sleeve black dress is made of black wool with lining from viscose.\n" +
@@ -402,7 +402,7 @@ export const items = [
         fabric: "Wool",
         color: "Black",
         size: "M",
-        proud: false,
+        selections: false,
         trend: false,
 
     },
@@ -419,7 +419,7 @@ export const items = [
         fabric: "Wool, Polyester",
         color: "Red",
         size: "M",
-        proud: false,
+        selections: false,
         trend: false,
 
     },
@@ -439,7 +439,7 @@ export const items = [
         fabric: "Viscose, polyester",
         color: "Pink",
         size: "M",
-        proud: false,
+        selections: false,
         trend: true,
 
     },
@@ -459,7 +459,7 @@ export const items = [
         fabric: "Polyester",
         color: "Light Gray",
         size: "M",
-        proud: false,
+        selections: false,
         trend: true,
 
     },
@@ -478,7 +478,7 @@ export const items = [
         fabric: "Polyester",
         color: "Beige with blue dots",
         size: "M",
-        proud: false,
+        selections: false,
         trend: true,
 
     },
@@ -498,7 +498,7 @@ export const items = [
         fabric: "Cotton, viscose, spandex",
         color: "Navy VBlue",
         size: "M",
-        proud: false,
+        selections: false,
         trend: false,
 
     },
@@ -518,7 +518,8 @@ export const items = [
         fabric: "Cotton, viscose, spandex",
         color: "Navy VBlue",
         size: "M",
-        proud: false,
+        selections: false,
+        trend: false,
 
     },
 

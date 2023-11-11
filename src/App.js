@@ -6,12 +6,14 @@ import Home from './Pages/Home';
 
 
 
+
 function App() {
   return (
       <>
           <NavBar/>
           <Routes>
               <Route index path= "/" element={<Home />} />
+
           </Routes>
 
 
