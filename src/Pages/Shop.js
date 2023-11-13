@@ -1,6 +1,7 @@
 import React from "react";
 import ShopList from "../Components/Shop/ShopList";
 import {Outlet} from "react-router";
+import Footer from "../Components/Footer/Footer";
 
 function Shop () {
 
@@ -9,6 +10,7 @@ function Shop () {
         <>
     <ShopList/>
     <Outlet />
+    <Footer/>
     </>
     )
 }

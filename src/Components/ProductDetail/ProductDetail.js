@@ -39,7 +39,7 @@ function ProductDetail() {
         }
     }
 
-    // const calcPrice = cartList.reduce(
+    // const totalPrice = cartList.reduce(
     //     (price, item) => price + item.qty * item.price, 0
     // );
 
@@ -103,7 +103,7 @@ function ProductDetail() {
                                 <button onClick={increase}>+</button>
                             </div>
                             {/*<p className= "product-price">{calcPrice(quantity)}.00 $</p>*/}
-                            {/*<p className= "product-price">{calcPrice}.00 $</p>*/}
+                            {/*<p className= "product-price">{totalPrice}.00 $</p>*/}
                         </div>
                         <div className= "atc-buy">
                             <button
