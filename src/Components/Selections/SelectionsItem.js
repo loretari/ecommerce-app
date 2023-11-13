@@ -23,7 +23,7 @@ function SelectionsItem() {
                     key={item.id} className= "product normal">
                     <Link
                         onClick={() => window.scrollTo(0, 0)}
-                        to= {`/product/${item.id}`}
+                        to= {`/shop/${item.id}`}
                     >
                         <div className= "product-header">
                             <img src={item.img} alt= "product1"/>

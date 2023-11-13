@@ -4,6 +4,7 @@ import NavBar from "./Components/Navbar/NavBar";
 import { Routes, Route } from "react-router-dom";
 import Home from './Pages/Home';
 import ProductPage from "./Pages/ProductPage";
+import Shop from "./Pages/Shop";
 
 
 
@@ -14,7 +15,8 @@ function App() {
           <NavBar/>
           <Routes>
               <Route index path= "/" element={<Home />} />
-              <Route path= "/product/:id" element={ProductPage}/>
+              <Route path= "shop" element={<Shop/>} />
+              <Route path= "/shop/:id" element={<ProductPage/>}/>
           </Routes>
 
 

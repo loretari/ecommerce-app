@@ -19,7 +19,7 @@ function ProductDetail() {
     const [quantity, setQuantity] = useState(1);
     const [image, setImage] = useState(item[0].img);
 
-    const { cartList } = useSelector((state) => state.cart);
+    // const { cartList } = useSelector((state) => state.cart);
 
     const handleAdd = () => {
          dispatch(addToCart({ product: item, num: quantity }));
@@ -39,9 +39,9 @@ function ProductDetail() {
         }
     }
 
-    const calcPrice = cartList.reduce(
-        (price, item) => price + item.qty * item.price, 0
-    );
+    // const calcPrice = cartList.reduce(
+    //     (price, item) => price + item.qty * item.price, 0
+    // );
 
 
 
@@ -103,7 +103,7 @@ function ProductDetail() {
                                 <button onClick={increase}>+</button>
                             </div>
                             {/*<p className= "product-price">{calcPrice(quantity)}.00 $</p>*/}
-                            <p className= "product-price">{calcPrice}.00 $</p>
+                            {/*<p className= "product-price">{calcPrice}.00 $</p>*/}
                         </div>
                         <div className= "atc-buy">
                             <button
