@@ -2,14 +2,17 @@ import React from 'react';
 import './SelectionsProducts.css';
 import { items } from "../../Data/AllData";
 import {Link} from "react-router-dom";
+import {addToCart} from "../../Store/cartSlice";
+import {useDispatch} from "react-redux";
 
-function SelectionsItem () {
+function SelectionsItem() {
 
     // const filteredItems = items.filter((item) => item.id <= 8);
     const filteredItems = items.filter((item) => item.selections);
 
+    const dispatch = useDispatch();
     const handleAdd = (item) => {
-
+    dispatch(addToCart({ product: item, num: 1 }));
     }
 
 

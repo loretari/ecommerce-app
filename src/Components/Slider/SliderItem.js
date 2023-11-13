@@ -1,11 +1,12 @@
-import React, {useState} from "react";
-import "./SliderCard.css";
+import React from "react";
+import "./SliderItem.css";
 import { Container, Row, Col} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import { items } from "../../Data/AllData";
+
 
 
 const SliderItem = ({ title, desc, cover}) => {
+
 
 
     return (
