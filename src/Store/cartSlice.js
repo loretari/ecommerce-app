@@ -13,6 +13,7 @@ export const cartSlice = createSlice({
     name: "cart",
     initialState,
     reducers: {
+
         addToCart: (state, action) => {
             const productToAdd = action.payload.product;
             const quantity = action.payload.num;
@@ -47,18 +48,19 @@ export const cartSlice = createSlice({
             }
         },
         deleteProduct: (state, action) => {
-            const productDelete = action.payload;
+            const productToDelete = action.payload;
             state.cartList = state.cartList.filter(
-                (item) => item.id !== productDelete.id
+                (item) => item.id !== productToDelete.id
             );
         },
+
     },
 });
 
 
 export const cartMiddleware = (store) => (next) => (action) => {
     const result = next(action);
-    if (action.type?.startsWith("cart")) {
+    if (action.type?.startsWith("cart/")) {
         const cartList = store.getState().cart.cartList;
         localStorage.setItem("cartList", JSON.stringify(cartList))
     }
@@ -69,3 +71,5 @@ export const { addToCart, decreaseQty, deleteProduct } = cartSlice.actions;
 
 
 export default cartSlice.reducer;
+
+

@@ -1,27 +1,41 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React, {useEffect} from "react";
+import { Container, Row, Col  } from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart, decreaseQty, deleteProduct} from "../Store/cartSlice";
+import {Link} from "react-router-dom";
+import ArrowLeft from "../Assets/arrow-left.png";
+
 
 
 const Cart = () => {
 
     const { cartList } = useSelector((state) => state.cart);
-
     const dispatch = useDispatch();
     const totalPrice = cartList.reduce(
-        (price, item) => price + item.qty * item.price, 0);
+        (price, item) => price + item.qty * item.price,
+        0
+    );
+
+
 
 
     return (
+        <>
+
+        <div className= "cart-home">
+        <Link
+            onClick={() => window.scrollTo(0, 0)}
+            to= "/">
+            <img src={ArrowLeft} alt= "arrow" />
+            Back
+        </Link>
+        </div>
         <section className= "cart-items">
             <Container>
                 <Row className= "justify-content-center">
                     <Col md={8}>
                         {cartList.length === 0 && (
-                            <h1 className= "no-items product">No Items are add in Cart</h1>
+                            <h1 className= "no-items productCard">No Items are add in Cart</h1>
                         )}
                         {cartList.map((item) => {
                             const productQty = item.price * item.qty;
@@ -72,7 +86,7 @@ const Cart = () => {
                             <h2>Cart Summary</h2>
                             <div className= "d_flex">
                                 <h4>Total Price: </h4>
-                                <h3>${totalPrice}</h3>
+                                <h3>${totalPrice}.00</h3>
                             </div>
                         </div>
                     </Col>
@@ -80,6 +94,7 @@ const Cart = () => {
             </Container>
 
         </section>
+           </>
     )
 }
 

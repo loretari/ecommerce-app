@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './SelectionsProducts.css';
 import { items } from "../../Data/AllData";
-import {Link} from "react-router-dom";
 import {addToCart} from "../../Store/cartSlice";
 import {useDispatch} from "react-redux";
+
+
 
 function SelectionsItem() {
 
@@ -15,16 +16,26 @@ function SelectionsItem() {
     dispatch(addToCart({ product: item, num: 1 }));
     }
 
+    const [notify, setNotify] = useState(false);
+
+    const showNotify = () => {
+        setNotify(!notify);
+    }
+
+
+
 
     return (
         <>
+            <div
+            onAnimationEnd={() => setNotify(false)}
+            className= {`notify ${notify ? "slide-in" : ""}`}
+        >
+            <p>Item has been added to the cart &nbsp; ✅</p>
+        </div>
             {filteredItems.map((item) => (
                 <div
                     key={item.id} className= "product normal">
-                    <Link
-                        onClick={() => window.scrollTo(0, 0)}
-                        to= {`/shop/${item.id}`}
-                    >
                         <div className= "product-header">
                             <img src={item.img} alt= "product1"/>
                         </div>
@@ -39,14 +50,17 @@ function SelectionsItem() {
                                 aria-label= "Add"
                                 type= "submit"
                                 className = "add"
-                                onClick={() => handleAdd(item)}
+                                onClick={() => {
+                                    handleAdd(item);
+                                    showNotify();
+                                    window.scrollTo(0, 0)
+                                }}
                                 >
 
                                     <ion-icon name="add"></ion-icon>
                                 </button>
                             </div>
                         </div>
-                    </Link>
 
                 </div>
 

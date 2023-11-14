@@ -4,7 +4,7 @@ import ArrowLeft from "../../Assets/arrow-left.png";
 import {Link} from "react-router-dom";
 import { useParams } from "react-router";
 import {useDispatch, useSelector} from "react-redux";
-import {addToCart} from "../../Store/cartSlice";
+import {addToCart, decreaseQty} from "../../Store/cartSlice";
 import { items } from "../../Data/AllData";
 
 
@@ -12,18 +12,26 @@ function ProductDetail() {
 
     const dispatch = useDispatch();
 
+
     const {id} = useParams();
 
     const item = items.filter((item) => item.id === parseInt(id));
 
     const [quantity, setQuantity] = useState(1);
+
+
+
     const [image, setImage] = useState(item[0].img);
 
     // const { cartList } = useSelector((state) => state.cart);
 
-    const handleAdd = () => {
-         dispatch(addToCart({ product: item, num: quantity }));
+    const handleAdd = (item, quantity) => {
+        dispatch(addToCart({product: item, num: quantity}));
     }
+    //
+    // const handleAdd = () => {
+    //      dispatch(addToCart({ product: item, num: quantity }));
+    // }
 
 
 
@@ -39,8 +47,13 @@ function ProductDetail() {
         }
     }
 
+    const calcPrice = (quantity) => {
+        return quantity * item[0].price;
+    }
+
     // const totalPrice = cartList.reduce(
-    //     (price, item) => price + item.qty * item.price, 0
+    //     (price, item) => price + item.qty * item.price,
+    //     0
     // );
 
 
@@ -59,6 +72,13 @@ function ProductDetail() {
 
 
     return (
+        <>
+            <div
+                onAnimationEnd={() => setNotify(false)}
+                className= {`notify ${notify ? "slide-in" : ""}`}
+            >
+                <p>Item has been added to the cart &nbsp; ✅</p>
+            </div>
         <div className= "product-page-div">
             <div className= "container">
                 <div className= "title-home">
@@ -99,14 +119,17 @@ function ProductDetail() {
                             <p>Quantity</p>
                             <div className= "product-btns">
                                 <button onClick={decrease}>-</button>
+
                                 <p className= "quantity">{quantity}</p>
+
                                 <button onClick={increase}>+</button>
                             </div>
-                            {/*<p className= "product-price">{calcPrice(quantity)}.00 $</p>*/}
+                            <p className= "product-price">{calcPrice(quantity)}.00 $</p>
                             {/*<p className= "product-price">{totalPrice}.00 $</p>*/}
                         </div>
                         <div className= "atc-buy">
                             <button
+
                                 onClick={()=> {
                                     handleAdd(item[0], quantity);
                                     showNotify();
@@ -136,6 +159,7 @@ function ProductDetail() {
             </div>
 
         </div>
+        </>
     )
 }
 

@@ -4,9 +4,12 @@ import {Navbar, Container, Nav} from "react-bootstrap";
 import LogoImg from '../../Assets/logo.png'
 import {Link} from "react-router-dom";
 import useWindowScrollToTop from "../../useWindowScrollToTop";
+import {useSelector} from "react-redux";
 
 
 const NavBar = () => {
+
+    const { cartList } = useSelector((state) => state.cart);
 
     const [isFixed, setIsFixed] = useState(false);
     const [expand, setExpand] = useState(false);
@@ -66,7 +69,7 @@ if (window.scrollY >= 100) {
                         onClick={() => window.scrollTo(0, 0)}
                         to= '/cart'
                         className= "cart"
-                        data-num={3}>
+                        data-num={cartList.length}>
                         <svg
                             width="20"
                             height="20"
@@ -143,7 +146,7 @@ if (window.scrollY >= 100) {
                                 onClick={() => window.scrollTo(0, 0)}
                                 to='/cart'
                                 className='cart'
-                                data-num={3}>
+                                data-num={cartList.length}>
                                 <svg
                                     width="20"
                                     height="20"
