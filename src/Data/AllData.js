@@ -110,12 +110,14 @@ export const serviceData = [
         title: "The Art of Gifting",
         subtitle: "gifts honor the most tender of attentions, " +
             "paying tribute to the art of giving and delighting that is at the heart",
+        // bg:  "#fdefe6",
 },
 {
     icon: <ion-icon name="airplane-outline"></ion-icon>,
     title: "Free Express Delivery",
     subtitle: "Express delivery (1-2 working days) : free. " +
         "Delivery timing is estimated from the time your order is shipped.)",
+    // bg: "#ceebe9",
 },
     {
     icon: <ion-icon name="globe-outline"></ion-icon>,
@@ -123,11 +125,15 @@ export const serviceData = [
     subtitle: "Download our app to enjoy this" +
         " saving on your first order – simply " +
         "enter code APP10 at checkout. T and Cs apply",
+        // bg: "#e2f2b2",
+
     },
 {
     icon: <ion-icon name="chatbox-outline"></ion-icon>,
     title: "Expert Advice",
     subtitle: "Exceptional customer care with 24-hour live chat",
+    // bg: "#d6e5fb",
+
 },
 
 ];

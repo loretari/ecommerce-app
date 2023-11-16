@@ -3,6 +3,8 @@ import Footer from "../Components/Footer/Footer";
 import SliderHome from "../Components/Slider/SliderHome";
 import TrendingSlider from "../Components/Trending/TrendingSlider";
 import SelectionsProducts from "../Components/Selections/SelectionsProducts";
+import Customer from "../Components/Customer/Customer";
+import NewsLetter from "../Components/NewsLetter/NewsLetter";
 
         const Home = () => {
     return (
@@ -10,7 +12,8 @@ import SelectionsProducts from "../Components/Selections/SelectionsProducts";
             <SliderHome/>
             <SelectionsProducts/>
             <TrendingSlider/>
-
+            <Customer/>
+            <NewsLetter/>
         <Footer />
         </>
 
