@@ -65,7 +65,7 @@ code {
 }
 
 section {
-    padding-top: 60px !important;
+    /*padding-top: 60px !important;*/
     padding-bottom: 60px !important;
 }
 
@@ -115,6 +115,7 @@ button {
 }
 
 /*   ---Shop Pages---   */
+
 
 .image-container {
     position: relative;

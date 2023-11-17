@@ -142,7 +142,7 @@ export const serviceData = [
 export const items = [
     {
         id: 1,
-        category: "capes",
+        category: "Capes",
         img: Img1,
         description: "Black Wool Cape",
         price: 119.00,
@@ -159,7 +159,7 @@ export const items = [
     },
     {
         id: 2,
-        category: "dresses",
+        category: "Dresses",
         img: Img2,
         description: "Little Black dress",
         price: 103.00,
@@ -177,7 +177,7 @@ export const items = [
     },
     {
         id: 3,
-        category: "dresses",
+        category: "Dresses",
         img: Img3,
         description: "Black Dress",
         price: 95.00,
@@ -195,7 +195,7 @@ export const items = [
     },
     {
         id: 4,
-        category: "dresses",
+        category: "Dresses",
         img: Img4,
         description: "Wool Navy Dress",
         price: 103.00,
@@ -214,7 +214,7 @@ export const items = [
     },
     {
         id: 5,
-        category: "dresses",
+        category: "Dresses",
         img: Img5,
         description: "Long sleeves dress",
         price: 105.00,
@@ -234,7 +234,7 @@ export const items = [
     },
     {
         id: 6,
-        category: "dresses",
+        category: "Dresses",
         img: Img6,
         description: "Sky Blue Dress",
         price: 103.00,
@@ -253,7 +253,7 @@ export const items = [
     },
     {
         id: 7,
-        category: "dresses",
+        category: "Dresses",
         img: Img7,
         description: "Shirt Dress",
         price: 103.00,
@@ -269,7 +269,7 @@ export const items = [
     },
     {
         id: 8,
-        category: "dresses",
+        category: "Dresses",
         img: Img8,
         description: "Sky Blue Dress",
         price: 121.00,
@@ -288,7 +288,7 @@ export const items = [
     },
     {
         id: 9,
-        category: "dresses",
+        category: "Dresses",
         img: Img9,
         description: "Navy Blue Dress",
         price: 121.00,
@@ -306,7 +306,7 @@ export const items = [
     },
     {
         id: 10,
-        category: "dresses",
+        category: "Dresses",
         img: Img10,
         description: "Navy Blue Dress",
         price: 103.00,
@@ -326,7 +326,7 @@ export const items = [
     },
     {
         id: 11,
-        category: "dresses",
+        category: "Dresses",
         img: Img11,
         description: "Shirt Dress",
         price: 108.00,
@@ -343,7 +343,7 @@ export const items = [
     },
     {
         id: 12,
-        category: "dresses",
+        category: "Dresses",
         img: Img12,
         description: "Shirt Dress with dragon-flies",
         price: 95.00,
@@ -360,7 +360,7 @@ export const items = [
     },
     {
         id: 13,
-        category: "dresses",
+        category: "Dresses",
         img: Img13,
         description: "Black Long sleeves dress",
         price: 103.00,
@@ -377,7 +377,7 @@ export const items = [
     },
     {
         id: 14,
-        category: "dresses",
+        category: "Dresses",
         img: Img14,
         description: "Black Long sleeves velvet dress",
         price: 108.00,
@@ -395,7 +395,7 @@ export const items = [
     },
     {
         id: 15,
-        category: "dresses",
+        category: "Dresses",
         img: Img15,
         description: "Black Pencil Dress dress",
         price: 108.00,
@@ -414,7 +414,7 @@ export const items = [
     },
     {
         id: 16,
-        category: "capes",
+        category: "Capes",
         img: Img16,
         description: "Red Wool Cape with Belt",
         price: 119.00,
@@ -431,7 +431,7 @@ export const items = [
     },
     {
         id: 17,
-        category: "dresses",
+        category: "Dresses",
         img: Img17,
         description: "Pink dress",
         price: 108.00,
@@ -451,7 +451,7 @@ export const items = [
     },
     {
         id: 18,
-        category: "dresses",
+        category: "Dresses",
         img: Img18,
         description: "Light Gray Dress",
         price: 108.00,
@@ -471,7 +471,7 @@ export const items = [
     },
     {
         id: 19,
-        category: "dresses",
+        category: "Dresses",
         img: Img19,
         description: "Dress with blue dots",
         price: 119.00,
@@ -490,7 +490,7 @@ export const items = [
     },
     {
         id: 20,
-        category: "dresses",
+        category: "Dresses",
         img: Img20,
         description: "Navy Blue  Dress",
         price: 109.00,
@@ -510,7 +510,7 @@ export const items = [
     },
     {
         id: 21,
-        category: "convertibleDresses",
+        category: "Convertible Dresses",
         img: Img21,
         description: "Navy Blue  Dress",
         price: 109.00,

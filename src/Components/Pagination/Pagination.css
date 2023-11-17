@@ -1,0 +1,36 @@
+.pagination {
+    border-top: 1px solid #cbcbcb;
+    padding-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+
+}
+
+
+.paginationTop {
+    padding: 6rem;
+}
+
+
+.page-link {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+
+--bs-pagination-active {
+    background-color: #B6002C;
+}
+.page-link a {
+    color: #2b2b2b;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page-item {
+    padding: 2px;
+    margin: 3px;
+    border-top-color: #B6002C;
+}

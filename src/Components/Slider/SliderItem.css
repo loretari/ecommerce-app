@@ -1,5 +1,5 @@
 .homeSlide .box {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     padding: 0 40px 2px;
 }
 
@@ -50,6 +50,7 @@
 .homeSlide .imageFlex {
     display: flex;
     margin-top: 20px;
+
 }
 
 

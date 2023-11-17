@@ -3,6 +3,7 @@ import './SelectionsProducts.css';
 import { items } from "../../Data/AllData";
 import {addToCart} from "../../Store/cartSlice";
 import {useDispatch} from "react-redux";
+import {Link} from "react-router-dom";
 
 
 
@@ -36,6 +37,10 @@ function SelectionsItem() {
             {filteredItems.map((item) => (
                 <div
                     key={item.id} className= "product normal">
+                    <Link
+                        onClick={() => window.scrollTo(0, 0)}
+                        to= {(`/shop/${item.id}`)}
+                    >
                         <div className= "product-header">
                             <img src={item.img} alt= "product1"/>
                         </div>
@@ -61,7 +66,7 @@ function SelectionsItem() {
                                 </button>
                             </div>
                         </div>
-
+                    </Link>
                 </div>
 
             ))}
