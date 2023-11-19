@@ -9,31 +9,42 @@ import {Col} from "react-bootstrap";
 import { items } from "../Data/AllData"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import FilterSelect from "../Components/FilterSelection/FilterSelect";
 
 
 function Shop () {
 
-const [filterList, setFilterList] = useState(
-    items.filter((item) => item.category === "Dresses")
-);
+// const [filterList, setFilterList] = useState(
+//     items.filter((item) => item.category === "Dresses")
+//
+// );
 
 
     return (
         <Fragment>
     <Banner title={"Shop By "}/>
-       <section className= "filter-bar">
-           <Container className= "filter-bar-contianer">
-               <Row className= "justify-content-center">
-            <Col md={8}>
-                <SearchBar setFilterList={setFilterList}/>
-            </Col>
-               </Row>
-    <ShopList/>
-    <MyPagination />
+       {/*<section className= "filter-bar">*/}
+       {/*    <Container className= "filter-bar-contianer">*/}
+       {/*        <Row className= "justify-content-center">*/}
+       {/*            <Col md={4}>*/}
+       {/*                /!*<FilterSelect setFilterList={setFilterList}/>*!/*/}
+       {/*                <FilterSelect/>*/}
+       {/*            </Col>*/}
+       {/*     <Col md={8}>*/}
+       {/*         /!*<SearchBar setFilterList={setFilterList}/>*!/*/}
+       {/*         <SearchBar/>*/}
+       {/*     </Col>*/}
+       {/*        </Row>*/}
+       {/*    </Container>*/}
+       {/*</section>*/}
+    {/*<ShopList items = {filterList}/>*/}
+            <ShopList />
+
+            <MyPagination />
     <NewsLetter/>
     <Footer/>
-           </Container>
-       </section>
+
+
     </Fragment>
     )
 }

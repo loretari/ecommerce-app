@@ -6,6 +6,7 @@ import Banner from "../Components/Banner/Banner";
 import {useParams} from "react-router";
 import {items} from "../Data/AllData";
 
+
 function ProductPage () {
 
     const {id} = useParams();
@@ -20,7 +21,7 @@ function ProductPage () {
     return (
         <>
             <Banner title={selectedItem?.category}/>
-           <ProductDetail/>
+           <ProductDetail />
             <TrendingSlider/>
             <Footer />
         </>

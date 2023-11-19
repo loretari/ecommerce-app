@@ -4,6 +4,7 @@ import './NewsLetter.css';
 function NewsLetter() {
     return (
        <>
+
            <div className= "news">
                <div className= "new-text">
                    <h2>NewsLetter</h2>
@@ -12,8 +13,8 @@ function NewsLetter() {
                        <button type= "submit">Subscribe</button>
                    </form>
                </div>
-
            </div>
+
        </>
     )
 }

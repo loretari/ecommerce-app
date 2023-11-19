@@ -44,13 +44,15 @@ function SelectionsItem() {
                         <div className= "product-header">
                             <img src={item.img} alt= "product1"/>
                         </div>
+
+                    </Link>
                         <div className="product-like">
                             <ion-icon name="heart-outline"></ion-icon>
                         </div>
                         <div className= "product-details">
                             <p>{item.description}</p>
                             <div className= "item-price">
-                            <p >USD {item.price}</p>
+                            <p>USD {item.price}</p>
                                 <button
                                 aria-label= "Add"
                                 type= "submit"
@@ -66,7 +68,7 @@ function SelectionsItem() {
                                 </button>
                             </div>
                         </div>
-                    </Link>
+
                 </div>
 
             ))}

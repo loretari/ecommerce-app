@@ -16,9 +16,6 @@ const Cart = () => {
         0
     );
 
-
-
-
     return (
         <>
 
@@ -43,16 +40,30 @@ const Cart = () => {
                                 <div className= "cart-list" key={item.id}>
                                     <Row>
                                         <Col className= "image-holder" sm={4} md={3}>
-                                            <img src={item.img} alt= "cartItem"/>
+                                            <Link
+                                                onClick={() => window.scrollTo(0, 0)}
+                                                to={`/shop/${item.id}`}>
+                                                <div className= "product-header">
+                                                    <img src={item.img} alt= "cartItem"/>
+                                                </div>
+                                            </Link>
                                         </Col>
                                         <Col sm={8} md={9}>
+
                                         <Row className= "cart-content justify-content-center">
                                             <Col xs={12} sm={9} className= "cart-details">
+                                                <Link
+                                                    onClick={() => window.scrollTo(0, 0)}
+                                                    to={`/shop/${item.id}`}>
                                                 <h3>{item.description}</h3>
                                                 <h4>${item.price}.00 * {item.qty}
                                                 <span>${productQty}</span>
                                                 </h4>
+                                                </Link>
                                             </Col>
+
+
+
                                             <Col xs={12} sm={3} className= "cartControl">
                                                 <button
                                                 className= "incCart"
