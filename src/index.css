@@ -106,11 +106,7 @@ button {
 .homeSlide {
     display: flex;
     justify-content: center;
-    /*background-color: #f4f2f0;*/
     background-color: #f2f2f4 ;
-
-/*    background-color: #636163;*/
-    /*background-color: #f6f9fc;*/
     padding-bottom: 0 !important;
 }
 

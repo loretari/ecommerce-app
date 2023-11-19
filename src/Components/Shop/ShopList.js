@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 import {Link} from "react-router-dom";
 import { items } from "../../Data/AllData";
 import './ShopList.css';
@@ -37,7 +37,7 @@ function ShopList () {
                     onClick={() => window.scrollTo(0, 0)}
                     to= "/">
                     <img src={ArrowLeft} alt= "arrow" />
-                    Back
+                    Home
                 </Link>
 
             </div>

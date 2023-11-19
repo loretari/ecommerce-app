@@ -86,7 +86,7 @@ function ProductDetail() {
                         onClick={() => window.scrollTo(0, 0)}
                         to= "/">
                         <img src={ArrowLeft} alt= "arrow" />
-                        Back
+                        Home
                     </Link>
 
                 </div>

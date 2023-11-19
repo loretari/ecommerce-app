@@ -124,15 +124,16 @@ if (window.scrollY >= 100) {
                         <Nav.Item>
                             <Link
                                 className="navbar-link"
-                                to="/cart"
+                                to="/"
                                 onClick={() => setExpand(false)}>
-                                <span className="nav-link-label">Cart</span>
+                                <span className="nav-link-label">News</span>
                             </Link>
                         </Nav.Item>
                         <Nav.Item className="expanded-cart">
                             <Link
                                 onClick={() => window.scrollTo(0, 0)}
-                                to= '/'>
+                                to= '/'
+                              >
                             <svg
                                 width="20"
                                 height="20"

@@ -17,17 +17,17 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
       <>
-          {/*<Router>*/}
-          {/*    <ToastContainer*/}
-          {/*        position="top-right"*/}
-          {/*        autoClose={1000}*/}
-          {/*        hideProgressBar={false}*/}
-          {/*        newestOnTop={false}*/}
-          {/*        closeOnClick*/}
-          {/*        pauseOnFocusLoss*/}
-          {/*        draggable*/}
-          {/*        pauseOnHover*/}
-          {/*        theme="light" />*/}
+
+              <ToastContainer
+                  position="top-right"
+                  autoClose={1000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                  theme="light" />
                   <NavBar/>
           <Routes>
               <Route index path= "/" element={<Home />} />
@@ -36,7 +36,7 @@ function App() {
               <Route path= "/cart" element={<Cart/>} />
           </Routes>
               <Footer/>
-          {/*</Router>*/}
+
         </>
   );
 }

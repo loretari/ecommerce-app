@@ -1,15 +1,9 @@
-import React, {Fragment, useState} from "react";
+import React, {Fragment} from "react";
 import ShopList from "../Components/Shop/ShopList";
-import Footer from "../Components/Footer/Footer";
 import Banner from "../Components/Banner/Banner";
 import NewsLetter from "../Components/NewsLetter/NewsLetter";
 import MyPagination from "../Components/Pagination/Pagination";
-import SearchBar from "../Components/SearchBar/SearchBar";
-import {Col} from "react-bootstrap";
-import { items } from "../Data/AllData"
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import FilterSelect from "../Components/FilterSelection/FilterSelect";
+
 
 
 function Shop () {
@@ -42,7 +36,7 @@ function Shop () {
 
             <MyPagination />
     <NewsLetter/>
-    <Footer/>
+
 
 
     </Fragment>
