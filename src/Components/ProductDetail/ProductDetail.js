@@ -3,8 +3,8 @@ import './ProductDetail.css'
 import ArrowLeft from "../../Assets/arrow-left.png";
 import {Link} from "react-router-dom";
 import { useParams } from "react-router";
-import {useDispatch, useSelector} from "react-redux";
-import {addToCart, decreaseQty} from "../../Store/cartSlice";
+import {useDispatch} from "react-redux";
+import {addToCart} from "../../Store/cartSlice";
 import { items } from "../../Data/AllData";
 
 

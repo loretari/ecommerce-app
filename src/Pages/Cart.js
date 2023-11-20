@@ -1,9 +1,9 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { Container, Row, Col  } from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart, decreaseQty, deleteProduct} from "../Store/cartSlice";
 import {Link} from "react-router-dom";
-import ArrowLeft from "../Assets/arrow-left.png";
+// import ArrowLeft from "../Assets/arrow-left.png";
 
 
 
