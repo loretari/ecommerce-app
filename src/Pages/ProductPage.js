@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import Footer from "../Components/Footer/Footer";
 import TrendingSlider from "../Components/Trending/TrendingSlider";
 import ProductDetail from "../Components/ProductDetail/ProductDetail";
 import Banner from "../Components/Banner/Banner";
