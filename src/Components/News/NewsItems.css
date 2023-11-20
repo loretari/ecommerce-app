@@ -1,0 +1,120 @@
+.trendingContainer {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 19px;
+
+}
+
+
+.row-item {
+    outline: 2px solid rgba(0, 0, 0, .205);
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+
+
+.row-item:hover {
+    outline: 2px solid rgba(0, 0, 0, .6);
+}
+
+.trending {
+    padding: 10rem 10rem;
+    background-color: #f2f2f4;
+
+}
+
+.item-header img {
+    width: 21rem;
+}
+
+.item-description {
+    font-size: 1.7rem;
+    padding: 1rem;
+
+}
+
+.trending h3 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem !important;
+}
+
+.row-container {
+    display: flex;
+    gap: 2.2rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    position: relative;
+    padding: 1rem .6rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.row-container::-webkit-scrollbar {
+    display: none;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+.title-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newIn {
+    margin-bottom: 3.2rem !important;
+}
+.newIn p {
+    font-size: 18px;
+}
+
+.btns button {
+    color: white;
+    background-color: #373737;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.btns {
+    display: flex;
+    gap: .4rem;
+
+}
+
+.btns button:hover {
+    background-color: #515151;
+}
+
+@media only screen and (max-width: 670px){
+    .trending h3 {
+        font-size: 2rem;
+    }
+    .btns {
+        font-size: 1rem;
+    }
+    .trending {
+        max-width: 800px;
+        padding: 30px 20px;
+    }
+    .trendingContainer {
+        padding: 0;
+    }
+    .newIn {
+        width: 22rem;
+    }
+
+    .newIn p {
+        font-size: 16px;
+    }
+}

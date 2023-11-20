@@ -124,7 +124,7 @@ if (window.scrollY >= 100) {
                         <Nav.Item>
                             <Link
                                 className="navbar-link"
-                                to="/"
+                                to="/news"
                                 onClick={() => setExpand(false)}>
                                 <span className="nav-link-label">News</span>
                             </Link>

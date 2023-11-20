@@ -16,7 +16,9 @@ function Hero () {
                 <div className= "container">
                     <div className= "grid-container">
                         <div className= "featured grid-one">
-                            <Link to= "/shop">
+                            <Link
+                                onClick={() => window.scrollTo(0, 0)}
+                                to= "/shop">
                                 <div id= "img1" className= "lil-overlay"></div>
                                 <img src={Dress1} alt= "dress1" />
                                 <p className="main-description">Velvet In Black</p>
