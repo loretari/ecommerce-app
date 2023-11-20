@@ -1,7 +1,6 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./Components/Navbar/NavBar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './Pages/Home';
 import ProductPage from "./Pages/ProductPage";
 import Shop from "./Pages/Shop";
@@ -9,6 +8,7 @@ import Cart from "./Pages/Cart";
 import Footer from "./Components/Footer/Footer";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {Route, Routes} from "react-router";
 
 
 

@@ -20,12 +20,13 @@ const Cart = () => {
         <>
 
         <div className= "cart-home">
-        <Link
-            onClick={() => window.scrollTo(0, 0)}
-            to= "/">
-            <img src={ArrowLeft} alt= "arrow" />
-            Back
-        </Link>
+            <h3 className= "shopping-bag">Shopping Bag</h3>
+        {/*<Link*/}
+        {/*    onClick={() => window.scrollTo(0, 0)}*/}
+        {/*    to= "/">*/}
+        {/*    <img src={ArrowLeft} alt= "arrow" />*/}
+        {/*    Back*/}
+        {/*</Link>*/}
         </div>
         <section className= "cart-items">
             <Container>
