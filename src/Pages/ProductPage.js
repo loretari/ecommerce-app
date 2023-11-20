@@ -23,7 +23,6 @@ function ProductPage () {
             <Banner title={selectedItem?.category}/>
            <ProductDetail />
             <TrendingSlider/>
-            <Footer />
         </>
     )
 

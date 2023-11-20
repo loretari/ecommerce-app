@@ -25,21 +25,27 @@ function Hero () {
                             </Link>
                         </div>
                         <div className="featured grid-two">
-                            <Link to= "/shop">
+                            <Link
+                                onClick={() => window.scrollTo(0, 0)}
+                                to= "/shop">
                                 <div id= "img2" className= "lil-overlay"></div>
                                 <img src={Dress2} alt="dress2" />
                                 <p className="main-description">Elegant in Black</p>
                             </Link>
                         </div>
                         <div className="featured grid-four">
-                            <Link to= "/shop">
+                            <Link
+                                onClick={() => window.scrollTo(0, 0)}
+                                to= "/shop">
                                 <div id= "img3" className= "lil-overlay"></div>
                                 <img src={Dress3} alt="dress3" />
                                 <p className= "main-description">Black in Black</p>
                             </Link>
                         </div>
                         <div className="featured grid-four-low">
-                            <Link to= "/shop">
+                            <Link
+                                onClick={() => window.scrollTo(0, 0)}
+                                to= "/shop">
                                 <div id= "img4" className= "lil-overlay"></div>
                                 <img src={Dress4} alt="dress4" />
                                 <p className="main-description">If it is not black?</p>

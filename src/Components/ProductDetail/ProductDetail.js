@@ -129,8 +129,8 @@ function ProductDetail() {
                         </div>
                         <div className= "atc-buy">
                             <button
-
                                 onClick={()=> {
+                                    window.scrollTo(0, 0)
                                     handleAdd(item[0], quantity);
                                     showNotify();
                                 }}
